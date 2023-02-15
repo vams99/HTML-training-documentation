@@ -229,3 +229,4 @@ example:-
 </picture>
 
 In the above example the image is switched between cropped and full image based on the width of the browser.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
