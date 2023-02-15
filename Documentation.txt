@@ -1,0 +1,231 @@
+HTML stands for "Hyper Text Markup Laungage"
+<i> only visible italics
+<em> used to put emphasis on something
+<strong> is used to make things importance , seriousness and urgency.
+<b>  is used to make the text look bold
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+lists
+
+3 types of lists in HTML 
+-------------------------------
+1.unordered lists.
+2.ordered list.
+3.Definition List.
+
+
+1. unordered list :-
+------------------------------------
+Most commonly used 
+in unordered list the elements has a dont infront of the list
+<li> list item 
+<ul> unorderes list 
+example:-
+----------
+<ul>
+<li>item1</li>
+<li>item2</li>
+<li>item3</li>
+<li>item4</li>
+</ul>
+
+
+Exp output 
+.item1
+.item2
+.item3
+.item4
+
+2.ordered List:-
+------------------------------------------------
+<ol> ordered list
+in ordered list the element have numbering before the listelement to display the order of the elements.
+example:-
+------------
+<ol>
+    <li><item1/li>
+    <li>item2</li>
+    <li>item3</li>
+<ol>
+
+Expected output 
+1.item1
+2.item2
+3.item3
+
+3.Definition List:-
+--------------------------
+ works as a key value pair
+ <dl>
+    <dt>Defeiniton Term</dt>
+    <dd>Definition descreption</dd>
+ </dl>
+ dl - Definition List
+ dt - key 
+ dd - descreption
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Quotes
+
+two types inline quotes and block cotes
+
+<q> is used for inline Quotes
+<blockquote> is used for block quotes
+<cite> is used to specify the authon name of the quotes
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Dates and Times
+ <time> is the element that specifies the date and time
+ an attribute datetime is used to specify the date and time
+ ex:-
+-------
+<time datetime="2023-02-11"> 11-Feb-2023</time>
+<time datetime="2023-02-10 10:00"> 11-Feb-2023 10:00 AM</time>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+code,<br>and <pre>:-
+---------
+<code> is used to specify a piece of code in the webpage
+
+note:-
+&lt == <
+&gt == >
+the above notations allows us to write html code that can be displayed of webpage i.e.use &lt instead of <, &gt instead of > as tags to be displayed
+
+<br> breakes the line while displaying the text
+<pre> maintains the spaces and indentations and prevents from being ignored
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+subscript,superScript & small text:-
+---------------------------------------
+Subscript :-
+<sub> is used to mention a subscript
+Example in H2O 2 should be a subscript 
+<p>
+    H
+        <sub>2</sub>
+    O
+</p>
+
+superScript :- 
+<sup> is used to mention a super script 
+Expample in x2(Square) 2 should be a super script
+<p>
+    x<sup>2</sup>
+</p>
+
+smallText:-
+<small> is used to mention small text
+example in a paragraph or in a page the text that has vely little importance is wrapped with <small>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HTML Attributes
+
+Global Attributes :- 
+---------------------
+1.class attribute,("allows us to target a specific element with the class from css or js")  <p class="test"></p>
+2.id attribute,("allows us to target a unique element with that unique id in css or js")    <p id="test_app"></p>
+3.contentEditable attribute,("gives the ability to edit the content on webpage")      <p contenteditable="true"> hello this can be edited</p>
+4.lang attribute,("Used to specify the language that is displayed")                 <p lang="en"> the language is english</p>
+5.dir attribute.("used to specify the direction of lang")   <p dir="ltr"> the text will be in left to right</p> <p dir="rtl"> the text will be from right to left</p>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Entities:-
+---------
+entities are used to create the "< , > , &" etc.. in the webpage
+Entity                                             charecter
+&lt;                                                    <
+&gt;                                                    >
+&amp;                                                   &
+&copy;                                          copyright something
+&trade;                                                TM
+&star;                                              Star sign
+&nbsp;  - prevents two words from breaking when page is adjusted.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Links:-
+-------
+the links are used to redirect the users from one page to another webpage
+<a> ancor tag is used along side the href attribute to specify a link as shown below.
+<a href="https://google.com">Redirect to google</a>
+the link can be wrapped arount text , image or any other type of objects
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Navigations:- 
+-------------
+<nav> tag is used to create a navigation element 
+usually the ul or ol tags are wrapped with <nav> to specify it as a navigation ad href is used to create the links to navigate
+example:-
+<nav aria-label = "main-navigation" class= "navigation">
+    <ul class= "navigation">
+        <li><a href="navigationlink" > option1 </li>
+    </ul>
+</nav>
+<footer> tag is used to display the footer of a page that provides additional information
+example:-
+    <footer>
+        <a href="link">Information</a>
+    </footer>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Images:-
+--------
+<img> tag is used to specify an image file the image file syntax is as follows
+<img src="source3 of the image link is present here" alt="alternate text for sescreption" width="width in pixels" height="Height in pixel">
+
+Image Formats:-
+----------------
+there are mainly four imge formats used in web pages
+1.gif
+2.svg
+3.jpg
+4.png
+
+Responsive images:-
+-------------------
+the responsive images are used to display different resolutions of images based on the perspective
+srcset attribute is used to display various images based on the browser perspective
+
+example:-
+<img src="imagelink-480pxwide.jpg" alt="demo pic" width = "480" height = "360"
+    srcset="imagelink-480pxwide.jpg 2x,
+            imagelink-980pxwide.jpg 3x,
+            imagelink-1440pxwide.jpg 4x,
+            imagelink-1920pxwide.jpg 5x" >
+
+the above example displayes the corresponding images based on size of the browser
+
+Responsive Width:-
+------------------
+the responsive width are used to display different resolutions of images based on the width of the webpage
+srcset attribute is used to display various images based on the browser width
+size attribute is used to set the size range for the imags to be displayed
+
+example:-
+<img src="imagelink-480pxwide.jpg" alt="demo pic" width = "480" height = "360"
+    srcset="imagelink-480pxwide.jpg 480w,
+            imagelink-980pxwide.jpg 960w,
+            imagelink-1440pxwide.jpg 1440w,
+            imagelink-1920pxwide.jpg 1920w"
+    
+    sizes = "(max-width: 480px) 240px,
+             (max-width: 980px) 480px,
+             (max-width: 1440px) 980px,
+             1920px" >
+
+in the above example untill the max width reaches 480px the imagewith 240px size is displayed and similarly the other functionality also works
+
+Responsive Picture :-
+----------------------
+<picture> tag is wrapped around the <source>,<img> tags to make a responsive picture
+the responsive picture switched between cropped and normal picture based on the width of the browser
+example:-
+---------
+<picture>
+    <source media="(min-width:600px)" when the minimum width of the browser reaches the width of 600px the following source will be triggered
+            srcset="imagelink-320.jpg 320w,
+                    imagelink-480.jpg 480w,
+                    imagelink-960.jpg 960w,
+                    imagelink-1440.jpg 1440w,
+                    imagelinl-1920.jpg 1929w" >
+    <source srcset="imagelink-cropped-320.jpg 320w,
+                    imagelink-corpped-480.jpg 480w,
+                    imagelink-cropped-960.jpg 960w,
+                    imagelink-cropped-1440.jpg 1440w,
+                    imagelinl-cropped-1920.jpg 1929w" >
+    <img src="imagelink-480.jpg" alt="image descreption" height="360" width="480">
+</picture>
+
+In the above example the image is switched between cropped and full image based on the width of the browser.
